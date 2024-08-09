@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base De Datos Ajax</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="OIP.jpeg">
+</head>
+<body>
+    <div class="border border-slate-500 w-[450px] shadow-sm shadow-slate-700 bg-lime-100 text-center mx-[500px] mt-4 rounded-[10px]">
+        <div>
+            <h1 class="font-bold text-[25px]">BASE DE DATOS</h1>
+                <h2 class="text-[18px]">REGISTO</h2>
+        </div>
+    </div>
+    <form id="formularioderegistro" class="bg-lime-50 ml-[500px] border border-slate-500 shadow-sm shadow-slate-700 mt-2 h-[270px] w-[450px] text-center rounded-[10px]" action="">
+        <div>
+            <label for="">Nombre * <input id="nombre" name="nombre" class="y-[200px] rounded-[5px] border mt-4 border-slate-500 cursor pointer" type="text"></label>
+        </div>
+        <div>
+            <label for="">Apellido * <input id="apellido" name="apellido" class="y-[200px] rounded-[5px] border mt-4 border-slate-500 cursor pointer" type="text"></label>
+        </div>
+        <div>
+            <label for="">Cedula * <input id="cedula" name="cedula" class="ml-[8px] y-[200px] rounded-[5px] border mt-4 border-slate-500 cursor pointer" type="text"></label>
+        </div>
+        <div>
+            <label for="">Correo * <input id="correo" name="correo" class="ml-[8px] y-[200px] rounded-[5px] border mt-4 border-slate-500 cursor pointer" type="text"></label>
+        </div>
+        <div class="flex ml-[60px] justify-center mt-2">
+            <h2>Estado *</h2>
+            <select id="sel" name="estado">
+                <option value="val">Opción</option>
+                <option value="activo">Activo</option>
+                <option value="inactivo">Inactivo</option>
+                <!-- <label for="">Estado * <input name="estado" class="y-[200px] rounded-[5px] border mt-4 border-slate-500 cursor pointer" type="text"></label> -->
+            </select>
+        </div>
+        
+    
+            <button type="submit" class="botonA bg-lime-200 w-[350px] h-[25px] mt-4 rounded-[5px] font-bold text-[17px] text-black">ENVIAR</button>
+        
+        
+    </form>
+    <div class="flex justify-center items-center mt-4 ">
+    <table class="border border-dashed border-slate-500 bg-lime-100" id="tablaRegistros" border="1">
+        <thead>
+            <tr>
+                <th class="border border-slate-500">Id</th>
+                <th class="border border-slate-500">Nombre</th>
+                <th class="border border-slate-500">Apellido</th>
+                <th class="border border-slate-500">Cédula</th>
+                <th class="border border-slate-500">correo</th>
+                <th class="border border-slate-500">Estado</th>
+                <th class="border border-slate-500">Opción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--Aqui se cargan los datos-->
+        </tbody>
+    </table>
+<script src="./code/main.js"></script>
+</div>
+</body>
+</html>
